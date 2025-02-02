@@ -18,9 +18,9 @@ const indexes = {
     name: new Map()
 };
 
-// Generate 2000 customer records with indexing
+// Generate 2000000 customer records with indexing
 console.log('Generating customer data and building indexes...');
-const customers = Array.from({ length: 2000 }, (_, id) => {
+const customers = Array.from({ length: 200000 }, (_, id) => {
     const customer = {
         id: id + 1,
         name_of_customer: faker.person.fullName(),
